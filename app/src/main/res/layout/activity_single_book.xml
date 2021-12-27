@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    >
+        <androidx.appcompat.widget.Toolbar
+            style="@style/Widget.MaterialComponents.Toolbar"
+            android:id="@+id/toolbaar"
+
+            app:titleTextColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Welcome"
+            app:navigationIcon="@drawable/arrow_back_24"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SingleBookActivity"
+    android:layout_margin="10dp"
+    >
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:id="@+id/large_img"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            />
+        <TextView
+            android:id="@+id/repeated_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="It includes key characters from the corresponding Literacy Book unit and the previous unit of the Language Book for students to identify. This is to help"
+            android:textColor="#424242"
+            android:fontFamily="casual"
+            />
+
+        <Button
+            android:paddingLeft="20dp"
+            android:layout_width="230dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:background="@drawable/button_bakground"
+            android:drawableLeft="@drawable/ic_google__g__logo"
+            android:text="Google"
+            android:backgroundTint="@color/white"
+            android:onClick="toGoogle"
+            />
+
+        <Button
+            android:paddingLeft="20dp"
+            android:layout_width="230dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_bakground"
+            android:drawableLeft="@drawable/ic_google_playsavage"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:text="Google Play"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:onClick="toPlayStore"
+            />
+    </LinearLayout>
+
+</ScrollView>
+</LinearLayout>

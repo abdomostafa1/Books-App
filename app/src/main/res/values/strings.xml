@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">google_books</string>
+    <string-array name="language">
+        <item> language</item>
+        <item>English</item>
+        <item>Arabic</item>
+        <item>France</item>
+        <item>Spanish</item>
+        <item>Chinese </item>
+        <item>Russian</item>
+        <item>Hindi </item>
+
+    </string-array>
+    <string-array name="price">
+        <item>Full</item>
+        <item>free</item>
+        <item>paid</item>
+        <item>e-books</item>
+
+    </string-array>
+    <string-array name="kind">
+        <item>Books</item>
+        <item>author</item>
+    </string-array>
+
+</resources>
