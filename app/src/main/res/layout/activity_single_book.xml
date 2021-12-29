@@ -26,7 +26,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SingleBookActivity"
-    android:layout_margin="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="0dp"
     >
     <LinearLayout
 
@@ -76,12 +78,14 @@
             />
         <TextView
             android:id="@+id/subtitle"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:text=""
             android:textColor="#424242"
             android:fontFamily="casual"
+            android:gravity="left"
+            android:layout_marginRight="10dp"
             />
 
         <Button

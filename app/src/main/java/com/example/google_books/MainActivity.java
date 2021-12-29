@@ -124,6 +124,7 @@ public class MainActivity extends AppCompatActivity {
         String final_Url = CreateUrl.getUrl(topic_str);
         Intent intent=new Intent(MainActivity.this,ListViewActivity.class);
         intent.putExtra("URL",final_Url);
+        intent.putExtra("selected_language",selected_language);
         startActivity(intent);
 
     }

@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RatingBar;
@@ -38,22 +39,53 @@ public class SingleBookActivity extends AppCompatActivity {
         if(imageUrl!=null)
         Glide.with(SingleBookActivity.this).load(imageUrl).into(image);
 
-        String language=intent.getStringExtra("language");
-        subtitle="description: ";
+        subtitle="";
 
         TextView  mtitle=(TextView)findViewById(R.id.repeated_title);
         if(intent.getStringExtra("title")!=null) {
             String str = intent.getStringExtra("title").replaceAll("title", "");
             mtitle.setText(str);
         }
-            else
+        else
             mtitle.setText("");
+
         TextView  msubtitle=(TextView)findViewById(R.id.subtitle);
+        String book_language=intent.getStringExtra("language");
+        int selected_language=intent.getIntExtra("selected_language",0);
+        String subtitle_begin=null;
+        if(selected_language==0)
+        {
+            if(book_language.equals("ar")) {
+                subtitle_begin = "نبذة: ";
+                msubtitle.setGravity(Gravity.RIGHT);
+            }
+            else if(book_language.equals("fr"))
+                subtitle_begin="la description: ";
+            else
+                subtitle_begin="description: ";
+
+        }
+        switch(selected_language) {
+            case 1:
+                subtitle_begin = "description: ";
+                break;
+            case 2:
+                subtitle_begin = "نبذة : ";
+                msubtitle.setGravity(Gravity.RIGHT);
+                break;
+            case 3:
+                subtitle_begin = "la description: ";
+                break;
+            default:
+                ;
+        }
+
         if(intent.getStringExtra("subtitle")!=null) {
-           String str = intent.getStringExtra("subtitle").replaceAll("\\<.*?\\>", "");
-            msubtitle.setText(subtitle+str);
+            String str = intent.getStringExtra("subtitle").replaceAll("\\<.*?\\>", "");
+            msubtitle.setText(subtitle_begin+str);
         }else
-            msubtitle.setText(subtitle+"...");
+            msubtitle.setText(subtitle_begin+"...");
+
         TextView reviews=(TextView)findViewById(R.id.review_id);
         reviews.setText(intent.getStringExtra("reviews_num"));
         RatingBar rating=(RatingBar)findViewById(R.id.book_rating);

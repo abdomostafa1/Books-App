@@ -23,7 +23,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="How to Use\n The APP"
-    android:textSize="35sp"
+    android:textSize="30sp"
     android:layout_marginLeft="10dp"
     android:textStyle="bold"
     android:layout_centerHorizontal="true"

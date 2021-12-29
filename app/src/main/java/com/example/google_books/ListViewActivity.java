@@ -68,6 +68,7 @@ public class ListViewActivity extends AppCompatActivity {
                 intent.putExtra("info_link", book.getInfo_link());
                 intent.putExtra("rating",book.getRatings());
                 intent.putExtra("reviews_num",book.getReviews_num());
+                intent.putExtra("selected_language",intent.getIntExtra("selected_language",0));
                 startActivity(intent);
             }
         });
