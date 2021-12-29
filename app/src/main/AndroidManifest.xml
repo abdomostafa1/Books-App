@@ -11,15 +11,14 @@
         android:label="booksAPI"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Google_books"
-        >
-        <activity android:name=".SingleBookActivity"
+        android:theme="@style/Theme.Google_books">
+        <activity android:name=".ListViewActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            >
-
-        </activity>
-        <activity android:name=".HowToUseAppActivity"
             ></activity>
+        <activity
+            android:name=".SingleBookActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity android:name=".HowToUseAppActivity" />
         <activity
             android:name=".MainActivity"
             android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">

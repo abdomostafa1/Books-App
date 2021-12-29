@@ -12,14 +12,12 @@
         android:layout_height="wrap_content"
     >
         <androidx.appcompat.widget.Toolbar
-            style="@style/Widget.MaterialComponents.Toolbar"
             android:id="@+id/toolbaar"
-
-            app:titleTextColor="@color/black"
+            app:title="details"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:title="Welcome"
             app:navigationIcon="@drawable/arrow_back_24"
+            app:titleTextColor="@color/black"
             />
 
     </com.google.android.material.appbar.AppBarLayout>
@@ -51,12 +49,37 @@
             android:layout_gravity="center"
             android:gravity="center"
             />
+
+        <RatingBar
+            android:id="@+id/book_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_above="@id/review_id"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+            android:numStars="5"
+            android:rating="3.5"
+            android:scaleX="0.5"
+            android:scaleY="0.5" />
+
+        <TextView
+            android:id="@+id/review_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="30dp"
+            android:text="5 Reviews"
+            android:layout_marginBottom="3dp"
+            android:layout_gravity="end"
+            />
         <TextView
             android:id="@+id/subtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="It includes key characters from the corresponding Literacy Book unit and the previous unit of the Language Book for students to identify. This is to help"
+            android:text=""
             android:textColor="#424242"
             android:fontFamily="casual"
             />
