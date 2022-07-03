@@ -1,26 +1,67 @@
 <resources>
-    <string name="app_name">google_books</string>
-    <string-array name="language">
-        <item> language</item>
-        <item>English</item>
-        <item>Arabic</item>
-        <item>France</item>
-        <item>Spanish</item>
-        <item>Chinese </item>
-        <item>Russian</item>
-        <item>Hindi </item>
+    <string name="app_name">find book</string>
 
+    <string name="Arabic">Arabic</string>
+    <string name="English">English</string>
+    <string name="France">France</string>
+    <string name="Spanish">Spanish</string>
+    <string name="Chinese">Chinese</string>
+    <string name="Hindi">Hindi</string>
+    <string name="Russian">Russian</string>
+    <string name="Book">Book</string>
+    <string name="Books">books</string>
+    <string name="Author">Author</string>
+    <string name="Search">Search</string>
+    <string name="Full">all</string>
+    <string name="Free">free</string>
+    <string name="Paid">paid</string>
+    <string name="e_books">e-books</string>
+
+    <string name="Topic">Topic</string>
+    <string name="Publisher">Publisher</string>
+    <string name="Pages">Pages</string>
+    <string name="By">By</string>
+
+    <string name="details">details</string>
+    <string name="Google">Google</string>
+    <string name="GooglePlay">GooglePlay</string>
+    <string name="Reviews"> Reviews </string>
+    <string name="Language">language</string>
+    <string name="no_internet">No Internet Connection!</string>
+    <string name="empty_topic">Topic is Empty</string>
+    <string name="tx1">How to Use\n The APP</string>
+    <string name="tx2">About it</string>
+    <string name="tx3">this app gives you list of books about a certain topic which you want to know more about it or figure it out
+,also display the books of your favorite Writer</string>
+    <string name="tx4">How to Use:</string>
+    <string name="tx5">Write in Topic Box what you wanna search about like in the photo blew</string>
+    <string name="tx6">to search about more than one topic add (+) </string>
+    <string name="tx7">In Case you wanna books of certain Writer select author from menu and Type his name in box</string>
+    <string name="tx8">select language to limit language of displayed books</string>
+    <string name="tx9">select Free to see only free-e-books or Paid for Paid-e-books and e-books won/"'/"t show print Type books</string>
+    <string name="tx10">Hope that you/"'/"ll Like it</string>
+
+    <string-array name="language">
+        <item> @string/Language</item>
+        <item>@string/English</item>
+        <item>@string/Arabic</item>
+        <item>@string/France</item>
+        <item>@string/Spanish</item>
+        <item>@string/Chinese </item>
+        <item >@string/Russian</item>
+        <item>@string/Hindi</item>
     </string-array>
     <string-array name="price">
-        <item>Full</item>
-        <item>free</item>
-        <item>paid</item>
-        <item>e-books</item>
+        <item>@string/Full</item>
+        <item>@string/Free</item>
+        <item>@string/Paid</item>
+        <item>@string/e_books</item>
+
 
     </string-array>
     <string-array name="kind">
-        <item>Books</item>
-        <item>author</item>
+        <item>@string/Books</item>
+        <item>@string/Author</item>
     </string-array>
 
 </resources>

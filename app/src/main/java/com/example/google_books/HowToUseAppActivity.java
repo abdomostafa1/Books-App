@@ -12,7 +12,7 @@ public class HowToUseAppActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_how_to_use_app2);
     }
-    public void closee(View view) {
+    public void close(View view) {
 
     finish();
     }

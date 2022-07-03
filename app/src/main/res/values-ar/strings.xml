@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">كتابك</string>
+    <string name="Arabic">العربية</string>
+    <string name="English">الانجليزية</string>
+    <string name="France">الفرنسية</string>
+    <string name="Spanish">الأسبانية</string>
+    <string name="Chinese">الصينية</string>
+    <string name="Hindi">الهندية</string>
+    <string name="Russian">الروسية</string>
+    <string name="Book">كتاب</string>
+    <string name="Books">كتب</string>
+    <string name="Author">المؤلف</string>
+    <string name="Search">ابحث</string>
+    <string name="Full">الكل</string>
+    <string name="Free">مجاني</string>
+    <string name="Paid">مدفوع</string>
+    <string name="e_books">الكتروني</string>
+
+    <string name="Topic">الموضوع</string>
+    <string name="Publisher">الناشر</string>
+    <string name="Pages">الصفحات</string>
+    <string name="By">بواسطة</string>
+
+    <string name="details">تفاصيل</string>
+    <string name="Google">جوجل</string>
+    <string name="GooglePlay">متجر جوجل</string>
+    <string name="Reviews">مراجعات</string>
+    <string name="Language">اللغة</string>
+    <string name="no_internet">لا يوجد اتصال بالانترنت</string>
+    <string name="empty_topic">اكتب في مربع الموضوع</string>
+    <string name="tx1">كيفية استخدام \n التطبيق</string>
+    <string name="tx2">حول التطبيق</string>
+    <string name="tx3">يمنحك هذا التطبيق قائمة بالكتب حول موضوع معين تريد معرفة المزيد عنه أو اكتشافه
+، اعرض أيضًا كتب كاتبك المفضل</string>
+    <string name="tx4">كيف تستعمله:</string>
+    <string name="tx5">اكتب في مربع الموضوع ما تريد البحث عنه في الصورة التي تم تفجيرها</string>
+    <string name="tx6">للبحث عن أكثر من موضوع أضف (+) </string>
+    <string name="tx7">في حال كنت تريد كتب كاتب معين ، حدد مؤلفًا من القائمة واكتب اسمه في المربع</string>
+    <string name="tx8">حدد اللغة للحد من لغة الكتب المعروضة</string>
+    <string name="tx9">حدد "مجاني" لعرض الكتب الإلكترونية المجانية فقط أو الكتب الإلكترونية المدفوعة مقابل الكتب الإلكترونية والكتب الإلكترونية التي لن تعرض الكتب المطبوعة</string>
+    <string name="tx10">اتمنى ان يعجبك</string>
+
+</resources>

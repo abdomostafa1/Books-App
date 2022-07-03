@@ -39,6 +39,7 @@ import java.util.List;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class MainActivity extends AppCompatActivity {
@@ -47,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
     Spinner price_category;
     Spinner lang_spinner;
     TextInputLayout textInputLayout;
+    FloatingActionButton fab;
     public static int selected_language = 0;
     public static int selected_category = 0;
     public static int selected_price_category = 0;
@@ -56,6 +58,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        fab=(FloatingActionButton) findViewById(R.id.fab);
+        fab.setColorFilter(getResources().getColor(R.color.gold));
         textInputLayout=(TextInputLayout)findViewById(R.id.text_input_layout_id);
         topic = (EditText) findViewById(R.id.topic);
         category = (Spinner) findViewById(R.id.book_or_author);
@@ -63,9 +67,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 if(position==0)
-                   textInputLayout.setHint("Topic");
+                   textInputLayout.setHint(getResources().getString(R.string.Topic));
                 else
-                    textInputLayout.setHint("Author");
+                    textInputLayout.setHint(getResources().getString(R.string.Author));
 
                 selected_category = position;
             }
@@ -102,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void GuideActivity(View view) {
+    public void goToGuide(View view) {
         Intent intent = new Intent(MainActivity.this, HowToUseAppActivity.class);
         startActivity(intent);
     }
@@ -111,13 +115,13 @@ public class MainActivity extends AppCompatActivity {
         ConnectivityManager conMan = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = conMan.getActiveNetworkInfo();
         if (!(networkInfo != null && networkInfo.isAvailable() && networkInfo.isConnected())) {
-            Toast.makeText(MainActivity.this, "No Internet Connection!", Toast.LENGTH_LONG).show();
+            Toast.makeText(MainActivity.this, getResources().getString(R.string.no_internet), Toast.LENGTH_LONG).show();
             return;
         }
 
         String topic_str = topic.getText().toString();
         if (topic_str.length() == 0) {
-            Toast.makeText(MainActivity.this, "Topic is Empty", Toast.LENGTH_LONG).show();
+            Toast.makeText(MainActivity.this,getResources().getString(R.string.empty_topic), Toast.LENGTH_LONG).show();
             return;
         }
 

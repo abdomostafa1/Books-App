@@ -59,7 +59,7 @@ public class ListViewActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Books book = (Books) parent.getItemAtPosition(position);
                 Intent intent = new Intent(ListViewActivity.this, SingleBookActivity.class);
-                intent.putExtra("large_img", book.getImage_url());
+                intent.putExtra("large_img", book.getThumbnail_url());
                 intent.putExtra("title", book.getTitle());
                 intent.putExtra("subtitle", book.getSubtitle());
                 intent.putExtra("catogries", book.getCatorgry());
@@ -130,7 +130,7 @@ public class ListViewActivity extends AppCompatActivity {
                             subtitle = volume_info.getString("description");
 
                         if (volume_info.has("publisher"))
-                            publisher = "Publisher: " + volume_info.getString("publisher");
+                            publisher = volume_info.getString("publisher");
 
                         if (volume_info.has("publishedDate"))
                             date = volume_info.getString("publishedDate");
@@ -176,7 +176,7 @@ public class ListViewActivity extends AppCompatActivity {
                         if (volume_info.has("ratingsCount"))
                             review_num = volume_info.getInt("ratingsCount");
 
-                        arrayList.add(new Books(thumbnail, title, author, language, publisher, date, pageCount, ratings, (review_num + " Reviews"), image, subtitle, catogrey, preview_link, info_link));
+                        arrayList.add(new Books(thumbnail, title, author, language, publisher, date, pageCount, ratings, (review_num + ""), image, subtitle, catogrey, preview_link, info_link));
 
 
                         if (ResponseCount == self_link.size()) {

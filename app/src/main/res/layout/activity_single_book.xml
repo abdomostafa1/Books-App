@@ -13,7 +13,7 @@
     >
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbaar"
-            app:title="details"
+            app:title="@string/details"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:navigationIcon="@drawable/arrow_back_24"
@@ -100,9 +100,10 @@
             android:textColor="@color/black"
             android:background="@drawable/button_bakground"
             android:drawableLeft="@drawable/ic_google__g__logo"
-            android:text="Google"
+            android:text="@string/Google"
             android:backgroundTint="@color/white"
             android:onClick="toGoogle"
+            android:textAllCaps="false"
             />
 
         <Button
@@ -115,10 +116,11 @@
             android:drawableLeft="@drawable/ic_google_playsavage"
             android:textColor="@color/black"
             android:backgroundTint="@color/white"
-            android:text="Google Play"
+            android:text="@string/GooglePlay"
             android:layout_marginBottom="20dp"
             android:layout_gravity="center"
             android:onClick="toPlayStore"
+            android:textAllCaps="false"
             />
     </LinearLayout>
 

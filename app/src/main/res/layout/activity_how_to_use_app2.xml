@@ -16,19 +16,20 @@
         android:background="@drawable/cancel"
         android:layout_alignParentRight="true"
         android:layout_margin="15dp"
-        android:onClick="closee"
+        android:onClick="close"
         />
 <TextView
     android:id="@+id/tx1"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="How to Use\n The APP"
+    android:text="@string/tx1"
     android:textSize="30sp"
     android:layout_marginLeft="10dp"
     android:textStyle="bold"
     android:layout_centerHorizontal="true"
-    android:layout_marginTop="28dp"
+    android:layout_marginTop="50dp"
     android:gravity="center"
+    android:maxLines="2"
     />
 
 
@@ -36,27 +37,29 @@
     android:id="@+id/tx2"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="About it"
+    android:text="@string/tx2"
     android:layout_below="@id/tx1"
     android:layout_marginTop="10dp"
     android:textStyle="italic"
-    android:layout_marginLeft="15dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
     />
     <TextView
         android:id="@+id/tx3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="this app gives you list of books about a certain topic which you want to know more about it or figure it out
-,also display the books of your favorite Writer"
+        android:text="@string/tx3"
         android:layout_below="@id/tx2"
-        android:layout_marginLeft="15dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         />
     <TextView
         android:id="@+id/tx4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="How to Use:"
-        android:layout_marginLeft="15dp"
+        android:text="@string/tx4"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:layout_below="@id/tx3"
         android:layout_marginTop="10dp"
         android:textStyle="italic"
@@ -65,9 +68,10 @@
         android:id="@+id/tx5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Write in Topic Box what you wanna search about like in the photo blew"
+        android:text="@string/tx5"
         android:layout_below="@id/tx4"
-        android:layout_marginLeft="15dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         />
     <ImageView
         android:id="@+id/img1"
@@ -87,10 +91,11 @@
         android:id="@+id/tx6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="to search about more than one topic add (+) "
+        android:text="@string/tx6"
         android:layout_below="@id/img2"
-        android:layout_marginLeft="15dp"
-    android:layout_marginBottom="2dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="2dp"
         />
     <ImageView
         android:id="@+id/img3"
@@ -103,9 +108,10 @@
         android:id="@+id/tx7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="In Case you wanna books of certain Writer select author from menu and Type his name in box"
+        android:text="@string/tx7"
         android:layout_below="@id/img3"
-        android:layout_marginLeft="15dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         />
     <ImageView
         android:id="@+id/img4"
@@ -125,9 +131,10 @@
         android:id="@+id/tx8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="select language to limit language of displayed books"
+        android:text="@string/tx8"
         android:layout_below="@id/img5"
-        android:layout_marginLeft="15dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         />
     <ImageView
         android:id="@+id/img6"
@@ -140,9 +147,10 @@
         android:id="@+id/tx9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="select Free to see only free-e-books or Paid for Paid-e-books and e-books won't show printTpye books"
+        android:text="@string/tx9"
         android:layout_below="@id/img6"
-        android:layout_marginLeft="15dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         />
     <ImageView
         android:id="@+id/img7"
@@ -153,21 +161,24 @@
         />
     <TextView
         android:id="@+id/tx10"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hope that you'll Like it"
+        android:text="@string/tx10"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/img7"
+        />
+
+    <View
+        android:id="@+id/empty_space"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:textSize="30sp"
         android:gravity="center"
         android:layout_marginLeft="15dp"
-        android:layout_below="@id/img7"
-        />
-    <ImageView
-        android:id="@+id/img8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/emoji"
         android:layout_below="@id/tx10"
-
         />
 
 </RelativeLayout>

@@ -38,19 +38,19 @@ public class CustomAdapter extends ArrayAdapter<Books> {
 
         TextView author=(TextView)convertView.findViewById(R.id.author_id);
         if(book.getAuthor()!=null)
-            author.setText("By: "+book.getAuthor());
+            author.setText(context.getResources().getString(R.string.By)+": "+book.getAuthor());
 
         TextView language=(TextView)convertView.findViewById(R.id.lang_id);
         if(book.getLanguage()!=null)
-        language.setText("Language: "+book.getLanguage());
+        language.setText(context.getResources().getString(R.string.Language)+": "+book.getLanguage());
 
         TextView pages=(TextView)convertView.findViewById(R.id.page_num_id);
         if(book.getPages_num()!=-1)
-        pages.setText("Pages: "+book.getPages_num());
+        pages.setText(context.getResources().getString(R.string.Pages)+": "+book.getPages_num());
 
         TextView publisher=(TextView)convertView.findViewById(R.id.publisher_id);
         if(book.getPublisher()!=null)
-        publisher.setText(book.getPublisher());
+        publisher.setText(context.getResources().getString(R.string.Publisher)+": "+book.getPublisher());
 
         TextView date=(TextView)convertView.findViewById(R.id.date_id);
         if(book.getDate()!=null)

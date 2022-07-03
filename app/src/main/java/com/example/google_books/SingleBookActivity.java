@@ -87,7 +87,7 @@ public class SingleBookActivity extends AppCompatActivity {
             msubtitle.setText(subtitle_begin+"...");
 
         TextView reviews=(TextView)findViewById(R.id.review_id);
-        reviews.setText(intent.getStringExtra("reviews_num"));
+        reviews.setText(getResources().getString(R.string.Reviews)+" "+intent.getStringExtra("reviews_num"));
         RatingBar rating=(RatingBar)findViewById(R.id.book_rating);
         rating.setRating((float)intent.getDoubleExtra("rating",0.0));
         rating.setIsIndicator(true);
